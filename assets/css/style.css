@@ -1,0 +1,406 @@
+.ptmsf-main-container {
+    padding-top: 10px;
+    margin: 0 30px 0 10px;
+}
+
+.ptmsf-main-container h2 {
+    font-size: 20px;
+}
+
+.ptmsf-main-container .plugin-content .form-container input[type=checkbox], .ptmsf-main-container .plugin-content .post-types-container input[type=checkbox] {
+    border-radius: 50%;
+    box-shadow: none;
+    border: 1px solid #3d71d0;
+    width: 1.1rem;
+    height: 1.1rem;
+    min-width: 1.1rem;
+    margin: 0 0 0 1px;
+}
+
+.ptmsf-main-container .plugin-content .form-container input[type=checkbox]:checked, .ptmsf-main-container .plugin-content .post-types-container input[type=checkbox]:checked {
+    background: #3d71d0;
+}
+
+.ptmsf-main-container .plugin-content .form-container input[type=checkbox]:checked::before, .ptmsf-main-container .plugin-content .post-types-container input[type=checkbox]:checked::before {
+    content: '';
+}
+
+#toplevel_page_post_type_edit_page {
+    display: none;
+}
+
+.ptmsf-main-container .top-container {
+    margin: 0 0 20px 0;
+}
+
+.ptmsf-main-container .plugin-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px 0 0;
+}
+
+.ptmsf-main-container #select-all-ptmsf {
+    margin-right: 4px;
+    margin-left: 8px;
+}
+
+.ptmsf-main-container .advanced {
+    display: none;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background: white;
+    padding: 15px;
+    border-radius: 7px;
+    gap: 30px;
+    margin-bottom: 12px;
+}
+
+.ptmsf-main-container .advanced-title {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.ptmsf-main-container .arrow-top {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 9px;
+    transition: transform 0.3s ease;
+}
+
+.ptmsf-main-container .arrow-down {
+    transform: rotate(180deg);
+}
+
+.ptmsf-main-container .input-field {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    gap: 5px;
+}
+
+.ptmsf-main-container .validation-info {
+    position: relative;
+}
+
+.ptmsf-main-container .validation-info .info-icon {
+    border-radius: 50%;
+    color: white;
+    background: #3d71d0;
+    height: 17px;
+    width: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ptmsf-main-container .validation-info .info-icon p {
+    font-size: 11px;
+}
+
+.ptmsf-main-container .validation-info .info-text {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    background: white;
+    width: max-content;
+    border-radius: 5px;
+    padding: 0 5px 0 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.ptmsf-main-container .validation-info .info-icon:hover + .info-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ptmsf-main-container .supports {
+    display: block;
+}
+
+.ptmsf-main-container .supports .input-inner:first-of-type {
+    margin-top: 11px;
+}
+
+.ptmsf-main-container .input-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.ptmsf-main-container .input-inner p {
+    margin: 0;
+}
+
+.ptmsf-main-container .dashicons-container {
+    flex-direction: column;
+    align-items: normal;
+}
+
+.ptmsf-main-container .dashicons-container #select-dashicon {
+    width: fit-content;
+}
+
+.dashicons-before img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ptmsf-main-container #dashicon-preview-container {
+    display: none;
+    position: relative;
+}
+
+.ptmsf-main-container #cancel-dashicon-preview {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    background: none;
+    border: none;
+    font-size: 10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 11px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ptmsf-main-container .list-item {
+    display: flex;
+    align-items: center;
+}
+
+.ptmsf-main-container .list-item h4 {
+    margin: 5px 0 5px 0;
+}
+
+.ptmsf-main-container .margin {
+    margin-left: 10px;
+}
+
+.ptmsf-main-container .edited {
+    color: #000000;
+    font-weight: bolder;
+}
+
+.ptmsf-main-container .validation-error {
+    display: none;
+    color: red;
+}
+
+.ptmsf-main-container .cancel-image-preview {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.ptmsf-main-container .preview-container {
+    position: relative;
+    display: flex;
+}
+
+.ptmsf-main-container #dashicon-picker-modal {
+    position: relative;
+    display: none;
+    width: 100%;
+}
+
+.ptmsf-main-container .dashicon-picker-modal-inner {
+    background: white;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 700px;
+}
+
+.ptmsf-main-container #close-dashicon-picker {
+    margin-top: 5px;
+    margin-left: auto;
+    display: flex;
+}
+
+.ptmsf-main-container #custom_dashicon_preview {
+    display: none;
+    max-width: 65px;
+    max-height: 65px;
+    border: 2px solid #3d71d0;
+    border-radius: 4px;
+}
+
+.ptmsf-main-container .validation-info .dashicons-info-icon {
+    top: -12px;
+}
+
+#wpbody-content .wrap .button-delete-ptmsf, .plugin-content .form-container .button-delete-ptmsf, .post-types-container .button-delete-ptmsf {
+    color: #ce2525;
+    border-color: #ce2525;
+    background: #fffcfc;
+}
+
+#wpbody-content .wrap .button-delete-ptmsf:hover, .plugin-content .form-container .button-delete-ptmsf:hover, .post-types-container .button-delete-ptmsf:hover {
+    color: #b41e1e;
+    border-color: #b41e1e;
+    background: #efe6e6;
+}
+
+#wpbody-content .wrap .button-delete-ptmsf:active, .plugin-content .form-container .button-delete-ptmsf:active, .post-types-container .button-delete-ptmsf:active {
+    border-color: #b41e1e;
+}
+
+#wpbody-content .wrap .button-delete-ptmsf:focus, .plugin-content .form-container .button-delete-ptmsf:focus, .post-types-container .button-delete-ptmsf:focus {
+    color: #b41e1e;
+    border-color: #b41e1e;
+    background: #efe6e6;
+    box-shadow: 0 0 0 1px #ce2525;
+}
+
+#wpbody-content .wrap .button-delete-ptmsf:focus-visible, .plugin-content .form-container .button-delete-ptmsf:focus-visible, .post-types-container .button-delete-ptmsf:focus-visible {
+    outline-color: #ce2525;
+}
+
+#wpbody-content .wrap .edit-post-type-ptmsf {
+    margin-left: 4px;
+}
+
+.ptmsf-main-container .not-found-container {
+    margin-left: 0;
+}
+
+#adminmenu .wp-submenu a[href="tools.php?page=post-type-management"]:before {
+    font-family: "Dashicons";
+    content: "\f327";
+    display: inline-block;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.ptmsf-main-container #post-type-table {
+    width: 100%;
+}
+
+.ptmsf-main-container #post-type-table .list-item {
+    display: table-row;
+}
+
+.ptmsf-main-container #post-type-table .order-column:before {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    font-family: "Dashicons";
+    content: "\f349";
+    padding-right: 5px;
+    vertical-align: bottom;
+}
+
+.ptmsf-main-container #post-type-table .list-item:hover .order-column:before {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.ptmsf-main-container #post-type-table .list-item:hover {
+    cursor: grabbing;
+}
+
+.ptmsf-main-container #post-type-table td {
+    vertical-align: middle;
+}
+
+.ptmsf-main-container #post-type-table tfoot .input-field {
+    margin-bottom: 0;
+}
+
+.ptmsf-main-container #post-type-table tfoot .ptmsf-save-order {
+    margin-left: auto;
+}
+
+.ptmsf-main-container .top-container #ptmsf-notice {
+    margin: 0 0 -20px 0;
+}
+
+.ptmsf-main-container .bool-params .input-field:first-of-type {
+    margin-top: 11px;
+}
+
+.ptmsf-main-container .dashicons-container {
+    display: flex;
+    gap: 5px;
+}
+
+.ptmsf-main-container .advanced .labels .input-field:last-of-type {
+    margin-bottom: 0;
+}
+
+.ptmsf-main-container table .column-order {
+    width: 5%;
+}
+
+.ptmsf-main-container table .column-name {
+    width: 25%;
+}
+
+.ptmsf-main-container table .column-slug {
+    width: 20%;
+}
+
+.ptmsf-main-container table .column-taxonomies {
+    width: 30%;
+}
+
+.ptmsf-main-container table .column-actions {
+    width: 20%;
+}
+
+.ptmsf-main-container table .ui-sortable-helper {
+    display: flex !important;
+    align-items: center;
+    flex-direction: row;
+    background: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.ptmsf-main-container table .ui-sortable-helper .order-column {
+    width: 5%;
+}
+
+.ptmsf-main-container table .ui-sortable-helper .order-name {
+    width: 25%;
+}
+
+.ptmsf-main-container table .ui-sortable-helper .order-slug {
+    width: 20%;
+}
+
+.ptmsf-main-container table .ui-sortable-helper .taxonomies-column {
+    width: 30%;
+}
+
+.ptmsf-main-container table .ui-sortable-helper .actions-column {
+    width: 20%;
+}
